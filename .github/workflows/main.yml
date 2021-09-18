@@ -38,10 +38,6 @@ jobs:
         # uses: Amadevus/pwsh-script@1f1751bbf3d1a92127bfc6c32403283625880cbf
         shell: pwsh
         run: |
-          Write-host "****************************"
-          Write-host "starting powershell scrips"
-          dir
-          ls
-          gci
-          Write-host "****************************"
+          $content = gc userlist.txt
+          Write-host $content
 
